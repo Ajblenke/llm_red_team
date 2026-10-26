@@ -1,0 +1,24 @@
+# Secrets: API keys live in the GNOME keyring, never in files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+
+# Course PDFs belong to their authors and stay out of the public repo
+*.pdf
+
+# Personal notes for the author and the coding assistant, kept local only
+CLAUDE.md
+DECISIONS.md

@@ -1,0 +1,28 @@
+[project]
+name = "llm-red-team"
+version = "0.1.0"
+description = "Small AI red team: input sensitivity and prompt injection tests on LLM chatbots"
+readme = "README.md"
+authors = [
+    { name = "Ajblenke", email = "josephblenke@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=2.33.0",
+    "openai>=3.37.0",
+    "pillow>=13.0.0",
+]
+
+[project.scripts]
+llm-red-team = "llm_red_team:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.11.2",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
